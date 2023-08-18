@@ -73,9 +73,10 @@ document.getElementById('ellipse-calculate-btn').addEventListener('click', funct
     const ellipseBValue = inputFieldValue('ellipse-b-value');
     const piValue = Math.PI;
     const ellipseArea = piValue * ellipseAValue * ellipseBValue ;
+    const ellipseAreaTwoDIgit = ellipseArea.toFixed(2);
     
     const ellipseTotalArea = document.getElementById('ellipse-area');
-    ellipseTotalArea.innerText = ellipseArea;
+    ellipseTotalArea.innerText = ellipseAreaTwoDIgit;
 
     
 })
